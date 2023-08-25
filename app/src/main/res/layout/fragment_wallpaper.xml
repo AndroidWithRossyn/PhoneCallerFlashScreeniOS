@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CallScreen.WallpaperFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/reply"
+                        android:queryHint="Search here..."
+                        android:searchIcon="@drawable/search"
+                        app:queryBackground="@android:color/transparent" />
+                    <RelativeLayout
+                        android:id="@+id/trending_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:paddingTop="12dp"
+                        android:layout_below="@+id/searchView"
+                        android:paddingBottom="12dp">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/rounded_stick" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Trending"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/view_all_trending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/tab_checked"
+                            android:text="See All"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@null" />
+
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/trending_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/trending_rl"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:paddingTop="12dp"
+                        android:layout_below="@+id/trending_recycler"
+                        android:paddingBottom="12dp">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/rounded_stick" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Categories"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/view_all_categories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/tab_checked"
+                            android:text="See All"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@null" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categories_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rounded_stick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Portrait Wallpaper"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/view_all_portrait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tab_checked"
+                        android:text="See All"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@null" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/portrait_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/rounded_stick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="Landscape Wallpaper"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/view_all_landscape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tab_checked"
+                        android:text="See All"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@null" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/landscape_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+            <CheckBox
+                android:id="@+id/download_fab"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/back_button_circle"
+                android:button="@null"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tint="@color/white" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/download_video_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/popular"
+                android:visibility="gone"
+                app:backgroundTint="@color/secondary1"
+                app:fabSize="auto"
+                app:layout_constraintBottom_toTopOf="@+id/download_fab"
+                app:layout_constraintEnd_toEndOf="@+id/download_fab"
+                app:layout_constraintStart_toStartOf="@+id/download_fab"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/download_video_fab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/tab_checked"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="Popular"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/download_video_fab"
+                app:layout_constraintEnd_toStartOf="@+id/download_video_fab"
+                app:layout_constraintTop_toTopOf="@+id/download_video_fab" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/download_audio_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/categories"
+                android:visibility="gone"
+                app:backgroundTint="@color/secondary1"
+                app:fabSize="auto"
+                app:layout_constraintBottom_toTopOf="@+id/download_video_fab"
+                app:layout_constraintEnd_toEndOf="@+id/download_video_fab"
+                app:layout_constraintStart_toStartOf="@+id/download_video_fab"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/download_audio_fab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/tab_checked"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="Categories"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/download_audio_fab"
+                app:layout_constraintEnd_toStartOf="@+id/download_audio_fab"
+                app:layout_constraintTop_toTopOf="@+id/download_audio_fab" />
+
+
+            <!--  <com.google.android.material.floatingactionbutton.FloatingActionButton
+                  android:id="@+id/download_images_fab"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="24dp"
+                  android:visibility="gone"
+                  android:src="@drawable/gallery"
+                  app:backgroundTint="@color/app_color"
+                  app:fabSize="auto"
+                  app:layout_constraintBottom_toTopOf="@+id/download_audio_fab"
+                  app:layout_constraintEnd_toEndOf="@+id/download_audio_fab"
+                  app:layout_constraintStart_toStartOf="@+id/download_audio_fab"
+                  app:tint="@color/white" />
+
+              <TextView
+                  android:id="@+id/download_images_fab_text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="8dp"
+                  android:layout_marginRight="8dp"
+                  android:background="@drawable/next_btn"
+                  android:paddingLeft="5dp"
+                  android:visibility="gone"
+                  android:paddingTop="5dp"
+                  android:paddingRight="5dp"
+                  android:paddingBottom="5dp"
+                  android:text="Gallery"
+                  android:gravity="center"
+                  android:textColor="@color/white"
+                  app:layout_constraintBottom_toBottomOf="@+id/download_images_fab"
+                  app:layout_constraintEnd_toStartOf="@+id/download_images_fab"
+                  app:layout_constraintTop_toTopOf="@+id/download_images_fab" />-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/offline_generator_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/offline_generator"
+                android:visibility="gone"
+                app:backgroundTint="@color/secondary1"
+                app:fabSize="auto"
+                app:layout_constraintBottom_toTopOf="@+id/download_audio_fab"
+                app:layout_constraintEnd_toEndOf="@+id/download_audio_fab"
+                app:layout_constraintStart_toStartOf="@+id/download_audio_fab"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/offline_generato_fab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/tab_checked"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="Offline Generator"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/offline_generator_fab"
+                app:layout_constraintEnd_toStartOf="@+id/offline_generator_fab"
+                app:layout_constraintTop_toTopOf="@+id/offline_generator_fab" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Phone Caller Flash Screen iOS</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="hintSearchMess">Search here...</string>
+    <string name="tmc_part_1">The application is notifying you to the presence of an app that provides several services that are essential information for safer and more efficient use. \n</string>
+    <string name="tmc_text_1">By pressing the Accept button, I declare I have read and accepted the following condition of use.</string>
+    <string name="tmc_text_2">If we find the app is being used outside its terms of use, we may restrict access to it.</string>
+    <string name="tmc_text_3">Any type of modification to the app or its components is not allowed.</string>
+    <string name="tmc_text_4">Privacy Policy may be updated from time to time for any reason. We will notify you of any changes to our Privacy Policy by posting the new Privacy Policy here.</string>
+    <string name="tmc_text_5">We do not share any kind of your Personal Data with third parties.</string>
+    <string name="following_link">Following link :\t</string>
+    <string name="privacy_hyper"><b><u>Privacy Policy</u></b></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="tmc_hyper"><b><u>Terms and Condition</u></b></string>
+    <string name="terms_and_condition">Terms and Condition</string>
+    <string name="content_setting">We could not open the dialog box automatically so that you can choose the application to be the default. You have to install it manually:\nSettings -&gt; Applications -&gt; Advanced-&gt; Select default applications -&gt; Call -&gt; Call Phone12</string>
+
+    <string name="first_onboard">Enhance your calling experience with our Advanced Caller ID feature, ensure you never miss your important calls.</string>
+    <string name="second_onboard">Stay informed and effortlessly multitask with our hands-free call announcement feature.</string>
+    <string name="third_onboard">Experience the convenience of Iphone dialer on your phone, with a seaming and user-friendly interface for managing your calls.</string>
+    <string name="tmc">
+Posting rules you should be taking care of before you start interaction on our website/application:
+\n
+\nAssuring you carry the rights and eligibility to post any form of content you are about to share. We never permit nudism on application/website.
+\n
+\nWe won\'t allow posting of sexually explicit content, sexually explicit text, images, or audio content depicting extreme sexual acts such as acts of posting Content that drives traffic to pornographic online services. Please note that we may make exceptions based on artistic, educational, historical, documentary, or scientific nature, or where there are other considerable benefits to the public at large.
+\n
+\nWe don\'t permit encouragement or applaud towards terrorism, formed crime scenes or hate association groups on our application/website. Attempting to sell sexual services or weapons and harmful drugs are also not permitted. We will remove reasonable threats of severity, hate arousing content/speech and the intentionally pointing of private individuals. We do not permit attacks/abuse based on skin colour, native, sex, gender, gender identity, sexual orientation, religion, disability or disease.
+\n
+\nGraphic violence is not allowed and we may remove videos or images of intense, graphic violence to make sure our Mobile Secret Code &amp; Locator stays appropriate for everyone.
+\n
+\nIf anyone or any account is spotted doing the above restricted activities they can be booked and arrested for the same. If viewers spot any violations of the above rules they have the right to report the content to us by using the report feature given in our Phone Caller Flash Screen iOS.
+    </string>
+    <string name="cannot_access_camera">Cannot access camera, is it being used by another app?</string>
+    <string name="grant_permission">Grant permission</string>
+    <string name="sos">SOS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="set">Apply</string>
+</resources>

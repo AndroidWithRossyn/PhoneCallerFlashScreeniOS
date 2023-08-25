@@ -1,0 +1,19 @@
+<!-- res/drawable/switch_track_gradient.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background track when switch is off -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="#757575" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    <!-- Gradient track when switch is on -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="@drawable/gradient_on" />
+                <corners android:radius="16dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

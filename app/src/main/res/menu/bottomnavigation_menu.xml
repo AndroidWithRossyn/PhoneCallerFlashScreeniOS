@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/phoneNav"
+        android:icon="@drawable/home_clear"
+        android:orderInCategory="1"
+        android:title="Caller Id" />
+
+    <item
+        android:id="@+id/flashNav"
+        android:icon="@drawable/flash_clear"
+        android:orderInCategory="2"
+        android:title="Call Flash" />
+    <item
+        android:id="@+id/dialerNav"
+        android:icon="@drawable/dialer_clear"
+        android:orderInCategory="3"
+        android:title="Iphone Dialer" />
+    <item
+        android:id="@+id/settingsNav"
+        android:icon="@drawable/setting_clear"
+        android:orderInCategory="3"
+        android:title="Settings" />
+
+
+</menu>
+
+

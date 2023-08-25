@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_marginHorizontal="20dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/flash_background"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Flash"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <LinearLayout
+            android:id="@+id/announce_vibrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/flash_on_call" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="Flash on call"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/status_incoming_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2.5"
+                android:background="?attr/selectableItemBackground"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:thumb="@drawable/thumb_drawable"
+                app:track="@drawable/switch_track_orange"
+                app:useMaterialThemeColors="false" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
